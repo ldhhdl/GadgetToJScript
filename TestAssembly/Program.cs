@@ -156,10 +156,10 @@ namespace TestAssembly
             MessageBoxW(IntPtr.Zero, error.Message, "error", 0);
         }
 
-        [DllImport("kernel32.dll")]
-        static extern IntPtr CreateRemoteThread(IntPtr hProcess,
-   IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress,
-   IntPtr lpParameter, uint dwCreationFlags, out uint lpThreadId);
+   //     [DllImport("kernel32.dll")]
+   //     static extern IntPtr CreateRemoteThread(IntPtr hProcess,
+   //IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress,
+   //IntPtr lpParameter, uint dwCreationFlags, out uint lpThreadId);
 
         public Program()
         {
